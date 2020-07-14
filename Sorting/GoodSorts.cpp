@@ -62,7 +62,6 @@ int main() {
     for(int i = 0; i < n; i++) cin >> arr[i];
     mergeSort(arr,0, n-1);
     cout << "The array is sorted to: \n"; for(int i = 0; i < n; i++) cout << arr[i] << " ";
-    shuffle(arr, arr+n, default_random_engine(0));
 
     return 0;
 }
