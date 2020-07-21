@@ -14,10 +14,11 @@ void rotate90(int mat[N][N]) {
 }
 
 void printIt(int mat[N][N]) {
-    for(int i = 0; i < N; i++)
+    for(int i = 0; i < N; i++){
         for(int j = 0; j < N; j++)
-            cout << mat[i][j];
-    cout << "\n";
+            cout << mat[i][j] << " ";
+        cout << "\n";
+    }
 }
 
 int main() {
@@ -25,10 +26,10 @@ int main() {
     for(int i = 0; i < N; i++)
         for(int j = 0; j < N; j++)
             mat[i][j] = count++;
-    cout << 'Original Matrix:\n';
+    cout << "Original Matrix:\n";
     printIt(mat);
     rotate90(mat);
-    cout << "Matrix after 90deg anti-clockwise rotation";
+    cout << "Matrix after 90deg anti-clockwise rotation\n";
     printIt(mat);
 
     return 0;
