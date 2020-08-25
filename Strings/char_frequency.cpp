@@ -1,7 +1,6 @@
 // Print the frequencies of characters (in sorted order) in a string of lower-case alphabets
 
 #include<iostream>
-#include<string>
 using namespace std;
 
 void countFrequency(string str){
